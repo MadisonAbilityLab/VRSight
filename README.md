@@ -1,8 +1,9 @@
 # VRSight: An AI-Driven Scene Description System to Improve Virtual Reality Accessibility for Blind People
 
-**Authors:** Daniel Killough¹, Justin Feng¹, Zheng Xue "ZX" Ching¹, Daniel Wang¹, Rithvik Dyava¹ Yapeng Tian², Yuhang Zhao¹
+**Authors:** Daniel Killough¹, Justin Feng¹*, Zheng Xue "ZX" Ching¹*, Daniel Wang¹*, Rithvik Dyava¹*, Yapeng Tian², Yuhang Zhao¹
 
-¹University of Wisconsin-Madison, ²University of Texas at Dallas
+¹University of Wisconsin-Madison, ²University of Texas at Dallas\
+*Authors 2-5 contributed equally to this work.
 
 ## 
 
@@ -15,5 +16,5 @@ This repo will soon hold:
 - VRSight code (system)
 - DISCOVR (VR object detection dataset)
 - DISCOVR-best.pt (best model weights)
-  - Now live on HuggingFace @ https://huggingface.co/UWMadAbility/VRSight/blob/main/best.pt
+  - Weights live on HuggingFace @ https://huggingface.co/UWMadAbility/VRSight/blob/main/best.pt
   - Note: Stored using pytorch default (pickle); safetensors version coming soon 
