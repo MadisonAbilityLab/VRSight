@@ -4,9 +4,9 @@
 
 ¹University of Wisconsin-Madison, ²University of Texas at Dallas
 
-## COMING SOON -- Awaiting Confirmed Conference Publication!
+## 
 
-**Links:** [Code](https://github.com/MadisonAbilityLab/VRSight) | Paper Released Soon!
+**Links:** [Code](https://github.com/MadisonAbilityLab/VRSight) | Paper: [ArXiv Preprint!](https://arxiv.org/abs/2508.02958) | Videos: Coming Soon! | [HuggingFace Organization]()
 <!-- %% Teaser Image %% -->
 
 **VRSight** is a Computer Vision-powered VR system that leverages real-time object detection, and multimodal large language models to help support blind and low vision users access VR environments. 
@@ -15,3 +15,5 @@ This repo will soon hold:
 - VRSight code (system)
 - DISCOVR (VR object detection dataset)
 - DISCOVR-best.pt (best model weights)
+  - Now live on HuggingFace @ https://huggingface.co/UWMadAbility/VRSight/blob/main/best.pt
+  - Note: Stored using pytorch default (pickle); safetensors version coming soon 
