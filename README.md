@@ -10,7 +10,7 @@
 **Links:** [Code](https://github.com/MadisonAbilityLab/VRSight) | Paper: [ArXiv Preprint!](https://arxiv.org/abs/2508.02958) | Videos: Coming Soon! | [HuggingFace Organization](https://huggingface.co/UWMadAbility)
 <!-- %% Teaser Image %% -->
 
-**VRSight** is a Computer Vision-powered VR system that leverages real-time object detection, and multimodal large language models to help support blind and low vision users access VR environments. 
+**VRSight** is a Computer Vision-powered VR system that leverages real-time object detection, zero-shot depth estimation, and multimodal large language models to help support blind and low vision users access VR environments through spatial audio. 
 
 This repo will soon hold: 
 - VRSight code (system)
