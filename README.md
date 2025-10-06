@@ -14,7 +14,8 @@
     <a href="https://github.com/MadisonAbilityLab/VRSight">Code</a> |
     <a href="https://github.com/MadisonAbilityLab/VRSight/releases">VRSight System</a> | 
     <a href="https://huggingface.co/datasets/UWMadAbility/DISCOVR">DISCOVR Dataset</a> |
-    <a href="https://huggingface.co/UWMadAbility/VRSight">Fine-Tuned Model Weights</a>
+    <a href="https://huggingface.co/UWMadAbility/VRSight">Fine-Tuned Model Weights</a> | 
+    <a href="https://github.com/MadisonAbilityLab/VRSight/edit/working/README.md#-citation">Citation</a>
   </h3>
 </p>
 
