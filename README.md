@@ -1,12 +1,12 @@
 <p align="center">
   <h1 align="center">VRSight: An AI-Driven Scene Description System to Improve Virtual Reality Accessibility for Blind People</h1>
   <p align="center">
-    Daniel Killough¹, Justin Feng¹*, Zheng Xue "ZX" Ching¹*, Daniel Wang¹*, Rithvik Dyava¹*, Yapeng Tian², Yuhang Zhao¹
+    Daniel Killough¹, Justin Feng¹*, Zheng Xue "ZX" Ching¹*, Daniel Wang¹*, Rithvik Dyava*, Yapeng Tian², Yuhang Zhao¹
     <br><br>
     <sup>1</sup>University of Wisconsin-Madison,
     <sup>2</sup>University of Texas at Dallas<br>
     *Authors 2-5 contributed equally to this work.
-    <br>
+    <br>op
     <sub>Presented at UIST 2025 in Busan, Republic of Korea</sub>
   </p>
   <h3 align="center">
@@ -208,47 +208,30 @@ VRSight achieves real-time performance:
 
 ### Processing Performance
 - **Frame Rate**: 30+ FPS real-time processing
-- **Latency**: Feedback as low as 2ms
+- **Latency**: End-to-end keypress-to-webVR feedback over websocket in as low as 2ms
 - **Memory Usage**: 30% reduction through optimized buffering
-- **High Accuracy**: Custom YOLO model trained on DISCOVR dataset: mAP50. Base model on COCO rarely detected; see paper for more details.
+- **High Detection Accuracy**: Custom YOLO model trained on DISCOVR dataset achieving 67.3% mAP50. Models trained on real-world objects (e.g., base YOLOv8 on COCO) rarely detected VR objects; see paper for more details.
 
 ## 🎯 DISCOVR Dataset
 
 VRSight is powered by the **DISCOVR** dataset, the first comprehensive VR object detection dataset.
 
 ### Dataset Overview
-- **30 Object Classes** across 6 categories, including 
-- **Training Images**
-- **Validation Images**: [PLACEHOLDER: Number of validation images]
-- **Test Images**: [PLACEHOLDER: Number of test images]
-- YOLO Format for fine-tuning YOLOv8 model. 
-- **Weights** available on [HuggingFace](https://huggingface.co/UWMadAbility/VRSight/blob/main/best.pt)
+- **30 Object Classes** across 6 categories, including *Avatars, Informational, Interactables, Safety, Seating Areas, and VR System*.
+- **15,207 Training Images**
+- **1,645 Validation Images**
+- **839 Test Images**
+- **YOLOv8 Annotation Format**
+- **Weights** available on [HuggingFace](https://huggingface.co/UWMadAbility/VRSight/blob/main/best.pt)!
 
-### VR-Specific Object Classes
-[PLACEHOLDER: List of specific VR object categories, e.g.]
-- Virtual UI elements (buttons, menus, panels)
-- VR controllers and hand representations
-- Interactive objects (grabbable items)
-- Environmental elements
-- [PLACEHOLDER: Add other specific categories]
+A full list of classes and their performance metrics can be found in Table 1 [in the paper](https://dl.acm.org/doi/pdf/10.1145/3746059.3747641).
 
-### Dataset Features
-- **Resolution**: 640x640
-- **Environments**: [PLACEHOLDER: Types of VR environments covered]
-- **Annotation Quality**: [PLACEHOLDER: Annotation methodology and quality metrics]
+A full breakdown of annotation methodology can be found [in the paper](https://dl.acm.org/doi/pdf/10.1145/3746059.3747641).
 
-### Model Training
-- **Base Model**: YOLOv8
-- **Training Strategy**: [PLACEHOLDER: Fine-tuning approach, transfer learning details]
-- **Performance Metrics**: [PLACEHOLDER: mAP scores, precision, recall on DISCOVR dataset]
-- **Weights**: Available at [HuggingFace](https://huggingface.co/UWMadAbility/VRSight/blob/main/best.pt)
+### Citation Requirements
+DISCOVR is available on HuggingFace at https://huggingface.co/datasets/UWMadAbility/DISCOVR under a CC-BY-4.0 License. **If you use DISCOVR in your research, please cite the base VRSight paper using the citation at the bottom of the readme!**
 
-### Dataset Access
-[PLACEHOLDER: How to access DISCOVR dataset]
-- **Download Link**: [PLACEHOLDER: Direct download link if available]
-- **License**: [PLACEHOLDER: Dataset license information]
-- **Citation Requirements**: [PLACEHOLDER: How to cite the dataset]
-
+<!--
 ## 🔍 API Reference
 
 ### Core Engines
@@ -281,7 +264,7 @@ config = get_config()
 from config_manager import ConfigManager
 manager = ConfigManager(Environment.PRODUCTION)
 config = manager.load_config()
-```
+``` -->
 
 ## 🚨 Troubleshooting
 
@@ -324,12 +307,14 @@ config.models.model_precision = "fp16"
 config.performance.memory_cleanup_threshold_mb = 2000
 ```
 
+## 🤝 Contributing
 
+We welcome open-source contributions to improve VRSight!
 
-## Contributing
-
-
-
+1. Fork the repository
+2. Create a feature branch
+3. Push your code to the feature branch
+4. Submit a pull request with clear description of the changes
 
 ### 🏗️ System Architecture
 VRSight consists of a modular architecture as follows:
@@ -357,7 +342,7 @@ VRSight consists of a modular architecture as follows:
 - **`geometry_utils.py`**: Spatial calculations and coordinate operations
 - **`audio_utils.py`**: TTS synthesis and spatial audio management
 
-## 🚀 Key Features
+### 🚀 Key Features
 
 - **🎯 Multi-Modal Recognition**: Object detection, depth estimation, edge detection, and OCR
 - **🔄 Real-time Processing**: Optimized pipeline achieving 30+ FPS with automatic quality scaling
@@ -368,14 +353,6 @@ VRSight consists of a modular architecture as follows:
 - **🧪 Enterprise Quality**: Comprehensive testing, benchmarking, and validation suite
 - **⚙️ Modular Design**: 11 specialized modules following SOLID principles
 
-## 🤝 Contributing
-
-We welcome open-source contributions to improve VRSight!
-
-1. Fork the repository
-2. Create a feature branch
-3. Push your code to the feature branch
-4. Submit a pull request with clear description of the changes
 
 ## 📜 Citation
 
@@ -396,7 +373,7 @@ This project is licensed under the Creative Commons Attribution 4.0 Internationa
 
 You are free to share and adapt this work for any purpose as long as you provide appropriate attribution to the original authors.
 
-## Acknowledgments
+## ❤️ Acknowledgments
 
 We thank the University of Wisconsin-Madison Ability Lab, the University of Texas at Dallas, and all contributors to the DISCOVR dataset. Special thanks to the accessibility community for their invaluable feedback and testing.
 
