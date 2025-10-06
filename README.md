@@ -6,7 +6,7 @@
     <sup>1</sup>University of Wisconsin-Madison,
     <sup>2</sup>University of Texas at Dallas<br>
     *Authors 2-5 contributed equally to this work.
-    <br>op
+    <br>
     <sub>Presented at UIST 2025 in Busan, Republic of Korea</sub>
   </p>
   <h3 align="center">
