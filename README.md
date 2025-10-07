@@ -2,7 +2,7 @@
   <h1 align="center">VRSight: An AI-Driven Scene Description System to Improve Virtual Reality Accessibility for Blind People</h1>
   <p align="center">
     Daniel Killough¹, Justin Feng¹*, Zheng Xue "ZX" Ching¹*, Daniel Wang¹*, Rithvik Dyava*, Yapeng Tian², Yuhang Zhao¹
-    <br>
+    <br><br>
     <sup>1</sup>University of Wisconsin-Madison,
     <sup>2</sup>University of Texas at Dallas<br>
     *Authors 2-5 contributed equally to this work.
