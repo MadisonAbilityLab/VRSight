@@ -1,0 +1,70 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Model weights and checkpoints (large files)
+Recognition/weights/
+Recognition/checkpoints/
+Recognition/pt/
+*.pt
+*.pth
+*.onnx
+*.h5
+
+# Test and debug output
+Recognition/images/
+debug_*
+*.log
+tts_log.txt
+key_press.log
+object_frame.jpg
+
+# Debug output images
+debug_bbox_*.png
+
+# IDE and editor files
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build and distribution
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Development utilities (kept in repo but not essential)
+# Recognition/dev/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node (if any)
+node_modules/
+package-lock.json
+
+# Project specific
+Recognition/_frozen
+*-ricky.py
