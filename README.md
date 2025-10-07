@@ -70,6 +70,7 @@ pip install -r requirements.txt
 
 ### 2. Model Setup
 
+#### 2a. VRSight Object Detection Model
 ```bash
 # Create weights directory
 mkdir -p weights
@@ -96,6 +97,9 @@ except Exception as e:
     print(f'❌ Model loading failed: {e}')
 "
 ```
+#### 2b. DepthAnythingV2 Module
+- Download the DepthAnythingV2 module and add to the Recognition/ folder
+- Add your desired weights to Recognition/checkpoints
 
 ### 3. Configuration
 
@@ -358,11 +362,12 @@ VRSight consists of a modular architecture as follows:
 If you use VRSight or DISCOVR in your research, please cite our work:
 
 ```bibtex
-@article{killough2024vrsight,
+@inproceedings{killough2025vrsight,
   title={VRSight: An AI-Driven Scene Description System to Improve Virtual Reality Accessibility for Blind People},
   author={Killough, Daniel and Feng, Justin and Ching, Zheng Xue and Wang, Daniel and Dyava, Rithvik and Tian, Yapeng and Zhao, Yuhang},
-  journal={arXiv preprint arXiv:2508.02958},
-  year={2024}
+  booktitle={Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology},
+  pages={1--17},
+  year={2025}
 }
 ```
 
@@ -375,5 +380,7 @@ You are free to share and adapt this work for any purpose as long as you provide
 ## Acknowledgments
 
 We thank the University of Wisconsin-Madison Ability Lab, the University of Texas at Dallas, and all contributors to the DISCOVR dataset. Special thanks to the accessibility community for their invaluable feedback and testing.
+
+Codebase refactored for release with help from Claude.ai
 
 For questions and support, please open a GitHub Issue or contact Daniel Killough at the MadAbility Lab at UW-Madison.
