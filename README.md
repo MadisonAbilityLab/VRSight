@@ -2,7 +2,7 @@
   <h1 align="center">VRSight: An AI-Driven Scene Description System to Improve Virtual Reality Accessibility for Blind People</h1>
   <p align="center">
     Daniel Killough¹, Justin Feng¹*, Zheng Xue "ZX" Ching¹*, Daniel Wang¹*, Rithvik Dyava*, Yapeng Tian², Yuhang Zhao¹
-    <br><br>
+    <br>
     <sup>1</sup>University of Wisconsin-Madison,
     <sup>2</sup>University of Texas at Dallas<br>
     *Authors 2-5 contributed equally to this work.
@@ -26,7 +26,7 @@
   </h3>
 </p>
 
-## ⚡ Quick*start
+## Quick*start
 \* Setup is not so quick and likely will require a sighted aide experienced with installing systems via command line. Expect 1 hour. Opportunity for future improvement.
 
 ### Hardware Requirements
@@ -109,8 +109,6 @@ export AZURE_COGNITIVESERVICES_KEY="your_azure_tts_key"
 export AZURE_TTS_REGION="your_region"
 ```
 
-
-
 ### 4. Launch Companion Apps
 On your computer, launch your cloned webVR utility (e.g., https://playcanvas.com/project/1233172/overview/vr-scene) -> Launch.
 
@@ -169,7 +167,7 @@ VRSight seeks virtual reality accessibility through a sophisticated multi-modal 
 - **🧠 AI Scene Description**: Natural language scene understanding 
 -->
 
-## 🔧 Configuration
+## Configuration
 
 ### Files
 ```python
@@ -203,7 +201,7 @@ rate_limiting:
   cooldown_interactables: 30
 ```
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 VRSight achieves real-time performance:
 
@@ -213,7 +211,7 @@ VRSight achieves real-time performance:
 - **Memory Usage**: 30% reduction through optimized buffering
 - **High Detection Accuracy**: Custom YOLO model trained on DISCOVR dataset achieving 67.3% mAP50. Models trained on real-world objects (e.g., base YOLOv8 on COCO) rarely detected VR objects; see paper for more details.
 
-## 🎯 DISCOVR Dataset
+## DISCOVR Dataset
 
 VRSight is powered by the **DISCOVR** dataset, the first comprehensive VR object detection dataset.
 
@@ -267,7 +265,7 @@ manager = ConfigManager(Environment.PRODUCTION)
 config = manager.load_config()
 ``` -->
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -308,7 +306,7 @@ config.models.model_precision = "fp16"
 config.performance.memory_cleanup_threshold_mb = 2000
 ```
 
-## 🤝 Contributing
+## Contributing
 
 We welcome open-source contributions to improve VRSight!
 
@@ -317,7 +315,7 @@ We welcome open-source contributions to improve VRSight!
 3. Push your code to the feature branch
 4. Submit a pull request with clear description of the changes
 
-### 🏗️ System Architecture
+### System Architecture
 VRSight consists of a modular architecture as follows:
 
 #### Core Detection Engines
@@ -343,19 +341,19 @@ VRSight consists of a modular architecture as follows:
 - **`geometry_utils.py`**: Spatial calculations and coordinate operations
 - **`audio_utils.py`**: TTS synthesis and spatial audio management
 
-### 🚀 Key Features
+### Key Features
 
-- **🎯 Multi-Modal Recognition**: Object detection, depth estimation, edge detection, and OCR
-- **🔄 Real-time Processing**: Optimized pipeline achieving 30+ FPS with automatic quality scaling
-- **🎧 Spatial Audio Feedback**: 3D positional audio with Azure TTS integration
-- **🎮 VR Interaction Support**: Hand/controller tracking with precise targeting assistance
-- **📊 Advanced Analytics**: Performance monitoring, memory management, and error recovery
-- **🌍 Multi-Environment Support**: Development, production, and testing configurations
-- **🧪 Enterprise Quality**: Comprehensive testing, benchmarking, and validation suite
-- **⚙️ Modular Design**: 11 specialized modules following SOLID principles
+- **Multi-Modal Recognition**: Object detection, depth estimation, edge detection, and OCR
+- **Real-time Processing**: Optimized pipeline achieving 30+ FPS with automatic quality scaling
+- **Spatial Audio Feedback**: 3D positional audio with Azure TTS integration
+- **VR Interaction Support**: Hand/controller tracking with precise targeting assistance
+- **Advanced Analytics**: Performance monitoring, memory management, and error recovery
+- **Multi-Environment Support**: Development, production, and testing configurations
+- **Enterprise Quality**: Comprehensive testing, benchmarking, and validation suite
+- **Modular Design**: 11 specialized modules following SOLID principles
 
 
-## 📜 Citation
+## Citation
 
 If you use VRSight or DISCOVR in your research, please cite our work:
 
@@ -368,13 +366,13 @@ If you use VRSight or DISCOVR in your research, please cite our work:
 }
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the Creative Commons Attribution 4.0 International License (CC-BY-4.0) - see the [LICENSE](LICENSE) file for details.
 
 You are free to share and adapt this work for any purpose as long as you provide appropriate attribution to the original authors.
 
-## ❤️ Acknowledgments
+## Acknowledgments
 
 We thank the University of Wisconsin-Madison Ability Lab, the University of Texas at Dallas, and all contributors to the DISCOVR dataset. Special thanks to the accessibility community for their invaluable feedback and testing.
 
