@@ -9,6 +9,7 @@
     <br>
     <sub>Presented at UIST 2025 in Busan, Republic of Korea</sub>
   </p>
+    
   <h3 align="center">
     <a href="https://dl.acm.org/doi/full/10.1145/3746059.3747641">Paper</a> |
     <a href="https://github.com/MadisonAbilityLab/VRSight">Code</a> |
@@ -18,7 +19,7 @@
     <a href="https://github.com/MadisonAbilityLab/VRSight?tab=readme-ov-file#-citation">Citation</a>
   </h3>
 </p>
-
+<img src="https://raw.githubusercontent.com/dkillough/vrsight-images/7735b4f249b2a94c79f20903bcbc67b117faead1/comparison-noletters.png" alt="VRSight Comparison Image demonstrating object detection, depth estimation, and spatial audio output from the same image of two hands reaching out towards a table with interactive objects."/>
 <p align="center">
 <strong>VRSight</strong> provides spatial audio feedback for blind and low vision users in virtual reality (VR) environments by leveraging AI systems like real-time object detection, zero-shot depth estimation, and multimodal large language models. VRSight provides real-time audio descriptions and spatial interaction assistance without per-app developer integration, creating the first post hoc "3D screen reading" system for VR.
     <h3 align="center">
