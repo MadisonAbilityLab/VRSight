@@ -108,7 +108,7 @@ except Exception as e:
   └── ...
   ```
 
-- Add your desired weights to Recognition/checkpoints
+- Add your desired weights to `Recognition/checkpoints/`
 
 ### 3. Configuration
 
