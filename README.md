@@ -99,7 +99,15 @@ except Exception as e:
 "
 ```
 #### 2b. DepthAnythingV2 Module
-- Download the DepthAnythingV2 module and add to the Recognition/ folder
+- Download the Depth Anything V2 repository, then copy the `depth_anything_v2` folder into `Recognition/`, so the project structure becomes:
+
+  ```text
+  Recognition/
+  ├── depth_anything_v2/
+  ├── main.py
+  └── ...
+  ```
+
 - Add your desired weights to Recognition/checkpoints
 
 ### 3. Configuration
@@ -115,9 +123,9 @@ export AZURE_TTS_REGION="your_region"
 ```
 
 ### 4. Launch Companion Apps
-On your computer, launch your cloned webVR utility (e.g., https://playcanvas.com/project/1233172/overview/vr-scene) -> Launch.
+On your computer, launch your cloned webVR utility (_e.g.,_ https://playcanvas.com/project/1233172/overview/vr-scene) -> Launch.
 
-If you're using a standalone headset like Meta Quest 3, open the built-in browser and navigate to the same Launch window. Then press the VR button to enter scene. 
+If you're using a standalone headset like the Meta Quest 3, open the built-in browser and navigate to the same Launch window. Then press the VR button to enter scene. 
 
 Once loaded in, you can safely return to menu and continue using your VR headset as normal, but <strong>do not quit the VR scene -- keep it running in the background.</strong>
 
@@ -133,7 +141,7 @@ Run with specific camera index:
 # Check available cameras
 python -c "
 import cv2
-for i in range(5):
+for i in range(10):
     cap = cv2.VideoCapture(i)
     if cap.isOpened():
         print(f'Camera {i}: Available')
@@ -360,7 +368,7 @@ VRSight consists of a modular architecture as follows:
 
 ## Citation
 
-If you use VRSight or DISCOVR in your research, please cite our work:
+If you use VRSight, the fine-tuned weights, or the DISCOVR dataset in your research, please cite our UIST 2025 paper:
 
 ```bibtex
 @inproceedings{killough2025vrsight,
@@ -379,6 +387,8 @@ This project is licensed under the Creative Commons Attribution 4.0 Internationa
 You are free to share and adapt this work for any purpose as long as you provide appropriate attribution to the original authors.
 
 ## Acknowledgments
+
+Thanks to @chenruijia120 for installing the work [for the cai.wisc.edu welcome video](https://www.youtube.com/watch?v=UQqsEChxMRA) and giving readme feedback! :)
 
 We thank the University of Wisconsin-Madison Ability Lab, the University of Texas at Dallas, and all contributors to the DISCOVR dataset. Special thanks to the accessibility community for their invaluable feedback and testing.
 
